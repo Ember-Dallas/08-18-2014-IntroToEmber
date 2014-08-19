@@ -1,0 +1,11 @@
+{{#each}}
+    Product SKU: {{sku}}<br>
+    Name: {{name}}<br>
+    Price: ${{currency price}}<br>
+    Tax: ${{currency tax}}<br>
+    Total Price: ${{currency totalPrice}}<br>
+    <button {{action "addToCart" this}}>Add to Cart</button><br>
+    <br><br>
+{{else}}
+    No products to sell you yet :-(
+{{/each}}

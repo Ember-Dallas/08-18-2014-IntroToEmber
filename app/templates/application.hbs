@@ -1,3 +1,14 @@
-<h2 id='title'>Welcome to Ember.js</h2>
+<div>
+    <h2>Our awesome site that sells stuff, or will shortly</h2>
+</div>
+
+<p>{{#link-to 'cart'}}# of items in cart: {{cartCount}} (${{currency cartTotal}}){{/link-to}}</p>
+
+<div>
+    {{#link-to 'index'}}Home{{/link-to}}
+    {{#link-to 'products'}}Products{{/link-to}}
+</div>
+
+
 
 {{outlet}}
